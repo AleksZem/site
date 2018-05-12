@@ -1,2 +1,2 @@
 # gameTest
-https://paroxy.github.io/gameTest/
+https://paroxy.github.io/site/
