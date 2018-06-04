@@ -10,6 +10,7 @@ var config = {
 
       }
     },
+    parent: 'gameID',
     scene: {
         preload: preload,
         create: create,
