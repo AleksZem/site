@@ -28,6 +28,6 @@ jQuery(function ($, undefined) {
 			greetings: 'Type \'help\' for more instructions',
 			name: 'JS_Trash',
 			height: 200,
-			prompt: 'PoorOpSec@root> '
+			prompt: 'root@PoorOpSec> '
 		});
 });
