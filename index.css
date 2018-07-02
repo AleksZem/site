@@ -1,61 +1,25 @@
-body {
-	font-family: 'Proza Libre';
-    text-align: center;
-	top: 20px;
-	background: #8e9eab;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-#temp_container{
-	margin: 20px auto;
-	width: 60%;
-	max-width: 1200px;
-	background-color: #F7F7F7;
-	text-align: center;
-	box-shadow: 0 0 5px rgba(0,0,0,0.5);
-	border-radius: 5%;
-}
-
-a.button{
-	margin-top: 15px;
-	appearance: button;
-	-moz-appearance: button;
-	-webkit-appearance: button;
-	text-decoration: none;
-	color: initial;
-	display: inline;
-	padding: 0 10px;
-}
-
 .hidden{
 	display: none;
 }
 
-h3{
-	color: white;
+body{
+	background-color: #000;
 }
 
-/*Just centers stuff*/
-.navbar-nav {
-    float:none;
-    margin:0 auto;
-    display: block;
-    text-align: center;
+#header {
+    font-family: monospace;
+    color: #aaa;
+    background-color: #000;
+    font-size: 12px;
+    line-height: 14px;
+    box-sizing: border-box;
+    cursor: text;
 }
 
-.navbar-nav > li {
-    display: inline-block;
-    float:none;
-}
-
-#mainPageImg{
-	float: left;
-}
-
-img{
-	border-radius: 2%;
-	box-shadow: 0 0 5px rgba(0,0,0,.5);
-	display: block;
-	max-height: 300px;
+#footer{
+	height: 100px; 
+    width:100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
