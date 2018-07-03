@@ -25,7 +25,7 @@ jQuery(function ($, undefined) {
 				case 'aleks -e': case 'aleks --email':
 					emailOutput(this);
 					break;
-				case 'car reasons_for_aleks_to_wake_up_in_the_morning.txt':
+				case 'cat reasons_for_aleks_to_wake_up_in_the_morning.txt': case 'cd government_secrets_worth_all_of_our_lives':
 					noseyOutput(this);
 					break;
 				default :
