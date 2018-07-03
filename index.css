@@ -28,10 +28,13 @@ body{
 }
 
 .asciiImage{
-    max-width: 25%;
-    float: left;
+    /* float: left; */
+    display: inline-block;
+    margin: 0 auto;
 }
 
 #imageContainer{
-    display: inline-block;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-between;
 }
