@@ -25,6 +25,9 @@ jQuery(function ($, undefined) {
 				case 'aleks -e': case 'aleks --email':
 					emailOutput(this);
 					break;
+				case 'car reasons_for_aleks_to_wake_up_in_the_morning.txt':
+					noseyOutput(this);
+					break;
 				default :
 					if (command.toLowerCase().indexOf("sudo") >= 0) {
 						this.echo("Come on you goofball, you know this isn't a unix shell");
@@ -90,4 +93,8 @@ function lsOutput(context){
 	context.echo("drwxr-xr-x 1 Aleks      42     0 Apr  3 16:52 ..");
 	context.echo("drwsrwsrws 1 government 42 43343 Jul  2 14:56 government_secrets_worth_all_of_our_lives");
 	context.echo("-rw-r--r-- 1 Aleks      42     0 Jul  2 15:00 reasons_for_aleks_to_wake_up_in_the_morning.txt");
-}
+};
+
+function noseyOutput(context){
+	context.echo("Okay stop it, you need to find something better to do with your time.");
+};
