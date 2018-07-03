@@ -16,6 +16,9 @@ jQuery(function ($, undefined) {
 				case 'aleks':
 					generalInformationOutput(this);
 					break;
+				case 'ls':
+					lsOutput(this);
+					break;
 				case 'aleks -g': case 'aleks --github':
 					githubOutput(this);
 					break;
@@ -53,7 +56,8 @@ function helpOutput(context){
 	context.echo("List of custom commands");
 	context.echo("help - gets you here so I guess you know this one");
 	context.echo("whoami -  returns my name");
-	context.echo("aleks [-e | --email | -g | --github] info");
+	context.echo("aleks [-e | --email | -g | --github] - info");
+	context.echo("ls - lists files and directories");
 	context.echo("Any valid js expression - it'll do the thing");
 	context.echo("**************************************************");
 };
@@ -71,8 +75,19 @@ function githubOutput(context){
 };
 
 function generalInformationOutput(context){
-	var tech = ['C, C#, C++, Java, Python, Swift,', 'SQL, Postgresql, HTML, CSS, Javascript, jQuery,', 'ASP.NET, Node JS, Express, WPF, WinForms,', 'XML, JSON, Git, MatLab, FES, LabView, SolidWorks, AutoCAD,', 'ASPEN, Epicor, Salesforce, Microsoft Office suite(Word, Excel, Visio, Powerpoint, etc.) Windows, Linux, MacOS'];
+	context.echo("**************************************************");
+	var tech = ['C, C#, C++, Java, Python, Swift, SQL, Postgresql, HTML, CSS, Javascript, jQuery,', 
+	'ASP.NET, Node JS, Express, WPF, WinForms, XML, JSON, Git, MatLab, FES, LabView, SolidWorks, AutoCAD,', 
+	'ASPEN, Epicor, Salesforce, Microsoft Office suite(Word, Excel, Visio, Powerpoint, etc.) Windows, Linux, MacOS'];
 	context.echo("Aleks Zemlyanskiy\nemail: alekszemlyanskiy@gmail.com\nlinkedin: https://www.linkedin.com/in/alekszem\ngithub: https://github.com/Paroxy");
-	context.echo("Technologies I've at least googled:");
+	context.echo("Technologies I've definitely at least googled:");
 	for(var i = 0; i < tech.length; i++) context.echo(tech[i]);
+	context.echo("**************************************************");
 };
+
+function lsOutput(context){
+	context.echo("drwxr-xr-x 1 Aleks      42     0 Jul  2 15:00 .");
+	context.echo("drwxr-xr-x 1 Aleks      42     0 Apr  3 16:52 ..");
+	context.echo("drwsrwsrws 1 government 42 43343 Jul  2 14:56 government_secrets_worth_all_of_our_lives");
+	context.echo("-rw-r--r-- 1 Aleks      42     0 Jul  2 15:00 reasons_for_aleks_to_wake_up_in_the_morning.txt");
+}
