@@ -25,3 +25,12 @@ body{
     bottom: 0;
     border-top: 1px solid #FFFFFF;
 }
+
+.asciiImage{
+    max-width: 25%;
+    float: left;
+}
+
+#imageContainer{
+    display: inline-block;
+}
