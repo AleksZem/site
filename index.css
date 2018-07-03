@@ -3,7 +3,9 @@
 }
 
 body{
-	background-color: #000;
+    background-color: #000;
+    font-family: monospace;
+    color: #aaa;
 }
 
 #header {
@@ -14,7 +16,6 @@ body{
     line-height: 14px;
     box-sizing: border-box;
     cursor: text;
-    
 }
 
 #footer{
