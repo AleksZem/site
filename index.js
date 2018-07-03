@@ -98,3 +98,5 @@ function lsOutput(context){
 function noseyOutput(context){
 	context.echo("Okay stop it, you need to find something better to do with your time.");
 };
+
+document.addEventListener('wheel', function(){}, { passive: true });

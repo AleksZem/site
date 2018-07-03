@@ -8,7 +8,7 @@ body{
     color: #aaa;
 }
 
-#header {
+/* #header {
     font-family: monospace;
     color: #aaa;
     background-color: #000;
@@ -16,7 +16,7 @@ body{
     line-height: 14px;
     box-sizing: border-box;
     cursor: text;
-}
+} */
 
 #footer{
 	height: 100px; 
@@ -27,14 +27,38 @@ body{
     border-top: 1px solid #FFFFFF;
 }
 
-.asciiImage{
-    /* float: left; */
-    display: inline-block;
+/* .asciiImage{
+    margin: 0 50px;
+} */
+
+pre{
+    width: 61ch;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
     margin: 0 auto;
 }
 
-#imageContainer{
-    /* text-align: center; */
+#footerContainer{
+    box-sizing: border-box
+}
+
+/* .asciiImage{
+    float: left;
+    display: inline-block;
+    margin: 0 auto;
+} */
+
+/* .flex {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+
+/* #imageContainer{
+    text-align: center;
     display: flex;
     justify-content: space-between;
-}
+} */
