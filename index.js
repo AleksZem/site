@@ -100,3 +100,15 @@ function noseyOutput(context){
 };
 
 document.addEventListener('wheel', function(){}, { passive: true });
+
+jQuery(document).ready(function () {
+	var midContentsBottom = $('#midContents').offset().top + $('#midContents').outerHeight(true);
+	
+	jQuery(window).scroll(function () {
+		if (jQuery('body').height() <= (jQuery(window).height() + jQuery(window).scrollTop())) {
+			jQuery('#footer').fadeOut();
+		} else {
+			jQuery('#footer').fadeIn();
+		}
+	});
+});
