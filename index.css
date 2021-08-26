@@ -1,8 +1,0 @@
-#DeleteAllOfThis {
-    height: 100%;
-    background: rgb(255,255,255);
-    background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(116,114,116,0.7399334733893557) 57%, rgba(47,47,47,0.5438550420168067) 93%);
-    background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(116,114,116,0.7399334733893557) 57%, rgba(47,47,47,0.5438550420168067) 93%);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(116,114,116,0.7399334733893557) 57%, rgba(47,47,47,0.5438550420168067) 93%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#2f2f2f",GradientType=1);
-}
